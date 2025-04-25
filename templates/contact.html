@@ -1,0 +1,162 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <!-- Contact Form Section -->
+            <div class="card border-0 shadow-lg mb-5 overflow-hidden">
+                <div class="row g-0">
+                    <div class="col-md-7">
+                        <div class="card-body p-5">
+                            <h2 class="fw-bold mb-4">Get In Touch</h2>
+                            <p class="lead mb-5">Have questions or feedback? We'd love to hear from you!</p>
+                            
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label">Your Name</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <input type="text" class="form-control" id="subject" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                                    </div>
+                                    <div class="col-12 mt-3">
+                                        <button type="submit" class="btn btn-primary px-4 py-3">
+                                            <i class="fas fa-paper-plane me-2"></i> Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-5 bg-primary text-white p-5 d-flex align-items-center">
+                        <div>
+                            <h3 class="fw-bold mb-4">Contact Information</h3>
+                            
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="bg-white bg-opacity-25 p-2 rounded-circle me-3">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Address</h6>
+                                    <p class="mb-0 small">Alpha 2, Greate Noida<br> 201310, India</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="bg-white bg-opacity-25 p-2 rounded-circle me-3">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Phone</h6>
+                                    <p class="mb-0 small">+91 8957876382</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="bg-white bg-opacity-25 p-2 rounded-circle me-3">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Email</h6>
+                                    <p class="mb-0 small">singhsaurabh34907@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-5">
+                                <h5 class="mb-3">Follow Us</h5>
+                                <div class="d-flex gap-3">
+                                    <a href="#" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                                    <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                                    <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                                    <a href="#" class="text-white"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Creator Profile Section -->
+            <div class="card border-0 shadow-lg overflow-hidden">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <div class="card-body p-5">
+                            <h2 class="fw-bold mb-4">Direct Contact with Creator</h2>
+                            <p>For technical inquiries, collaborations, or press information, you can contact me directly.</p>
+                            
+                            <div class="d-flex align-items-center mb-4">
+                                <img src="static/images/my-port_img1.jpg" 
+                                     alt="Creator" class="rounded-circle me-4" width="80">
+                                <div>
+                                    <h4 class="mb-1">Saurabh Singh</h4>
+                                    <p class="text-muted mb-2">Lead Developer</p>
+                                    <div class="d-flex gap-2">
+                                        <span class="badge bg-primary">AI & ML Specialist</span>
+                                        <span class="badge bg-success">Nutrition Advisor</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-4">
+                                <div class="col-md-6 mb-3">
+                                    <div class="card border-0 bg-light h-100">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center">
+                                                <div class="bg-primary bg-opacity-10 p-2 rounded-circle me-3">
+                                                    <i class="fas fa-envelope text-primary"></i>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mb-1">Personal Email</h6>
+                                                    <a href="mailto:singhsaurabh34907@gmail.com" class="text-decoration-none">saurabh@nutriguide.com</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="card border-0 bg-light h-100">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center">
+                                                <div class="bg-info bg-opacity-10 p-2 rounded-circle me-3">
+                                                    <i class="fab fa-linkedin text-info"></i>
+                                                </div>
+                                                <div>
+                                                    <h6 class="mb-1">LinkedIn</h6>
+                                                    <a href="#" class="text-decoration-none">linkedin.com/in/saurabhsingh</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4">
+                                <h5 class="mb-3">Schedule a Meeting</h5>
+                                <p>Available for consultations and collaborations on weekdays from 10 AM to 5 PM IST.</p>
+                                <a href="#" class="btn btn-outline-primary">
+                                    <i class="fas fa-calendar-alt me-2"></i> Book Appointment
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="static/images/my-port_img1.jpg" 
+                             alt="Meeting" class="img-fluid h-100 object-fit-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
