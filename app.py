@@ -3,18 +3,20 @@ import pandas as pd
 from flask import Flask, render_template, request, jsonify
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.preprocessing import LabelEncoder
-
+import os
 from dotenv import load_dotenv
 load_dotenv()
 
-app = Flask(__name__)
+
 
 # Load the trained model and encoders
-with open('models/classifier.pkl', 'rb') as f:
-    classifier = pickle.load(f)
+from joblib import dump, load
 
-with open('models/label_encoders.pkl', 'rb') as f:
-    label_encoders = pickle.load(f)
+# Save model
+dump(classifier, 'models/classifier.joblib')
+
+# Load model
+classifier = load('models/classifier.joblib')
 
 # Diet information database (could be moved to a proper database)
 DIET_TIPS = {
@@ -125,5 +127,6 @@ def contact():
     return render_template('contact.html')
 
 if __name__ == '__main__':
+    load_dotenv()  # Load environment variables
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
